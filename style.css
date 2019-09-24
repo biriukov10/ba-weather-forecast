@@ -1,0 +1,139 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgb(95, 95, 247);
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  width: 1000px;
+  max-width: 100%;
+  margin: 100px auto;
+  list-style: none;
+  font-size: 0;
+  transition: all .1s ease-in;
+  border: 2px solid azure;
+}
+
+li {
+  /* max-width: 100%; */
+  display: inline-block;
+  color: azure;
+  border: 2px solid azure;
+  text-align: center;
+  font-size: 18px;
+  /* padding: 35px; */
+}
+.wi.wi-day-sunny.one-item,
+.wi.wi-day-hail.two-item,
+.wi.wi-day-cloudy.three-item, 
+.wi.wi-day-cloudy-high.four-item,
+.wi.wi-hot.five-item, 
+.wi.wi-day-thunderstorm.six-item,
+.wi.wi-day-rain-wind.seven-item, 
+.wi.wi-day-sunny-overcast.eight-item,
+.wi.wi-night-clear.nine-item,
+.wi.wi-day-sunny.ten-item,
+.wi.wi-night-cloudy.eleven-item {
+  line-height: 50px;
+}
+.wi {
+  vertical-align: bottom;
+}
+.one-item {
+  width: 50%;
+  background-color: rgb(109, 109, 252);
+}
+.two-item {
+  width: 25%;
+  background-color: rgb(79, 184, 149);
+}
+.three-item {
+  width: 25%;
+  background-color: brown;
+}
+.four-item {
+  width: 25%;
+  background-color: red;
+}
+.five-item {
+  width: 25%;
+}
+.six-item {
+  width: 25%;
+  background-color: rgb(243, 165, 21);;
+}
+.seven-item {
+width: 25%;
+background-color: rgb(34, 94, 34);
+}
+.eight-item {
+  width: 25%;
+  background-color: rgb(91, 112, 91);;
+}
+.nine-item {
+  width: 50%;
+  background-color: rgb(230, 128, 145);
+}
+.ten-item {
+  width: 25%;
+  background-color: rgb(255, 196, 0);
+}
+
+.eleven-item {
+  width: 100%;
+  background-color: rgb(150, 28, 187);
+}
+ul:hover li:not(:hover) {
+  filter: grayscale(0.7);
+  opacity: 0.6;
+}
+
+.wi.wi-day-sunny.one-item::before,
+.wi.wi-day-hail.two-item::before,
+.wi.wi-day-cloudy.three-item::before, 
+.wi.wi-day-cloudy-high.four-item::before,
+.wi.wi-hot.five-item::before, 
+.wi.wi-day-thunderstorm.six-item::before,
+.wi.wi-day-rain-wind.seven-item::before, 
+.wi.wi-day-sunny-overcast.eight-item::before,
+.wi.wi-night-clear.nine-item::before,
+.wi.wi-day-sunny.ten-item::before,
+.wi.wi-night-cloudy.eleven-item::before {
+  content: "";
+}
+.wi.wi-day-sunny.one-item::after {
+  content: "\f03c\f00d";
+}
+.wi.wi-day-hail.two-item::after{
+  content: "\f03c\f01a";
+}
+.wi.wi-day-cloudy.three-item::after{
+  content: "\f03c\f002"
+}
+.wi.wi-day-cloudy-high.four-item::after {
+ content: "\f03c\f07d";
+}
+.wi.wi-hot.five-item::after {
+ content: "\f03c\f072";
+}
+.wi.wi-day-thunderstorm.six-item::after {
+ content: "\f03c\f010";
+}
+.wi.wi-day-rain-wind.seven-item::after {
+ content: "\f03c\f007";
+}
+.wi.wi-day-sunny-overcast.eight-item::after {
+ content: "\f03c\f00c";
+}
+.wi.wi-night-clear.nine-item::after {
+ content: "\f03c\f02e";
+}
+.wi.wi-day-sunny.ten-item::after {
+content: "\f03c\f00d";
+}
+.wi.wi-night-cloudy.eleven-item::after { 
+  content: "\f03c\f031";
+}
